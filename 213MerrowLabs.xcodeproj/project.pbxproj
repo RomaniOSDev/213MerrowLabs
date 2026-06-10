@@ -3,33 +3,144 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		301FD92E2FD817070019443E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FD9242FD817070019443E /* AppDelegate.swift */; };
+		301FD92F2FD817070019443E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FD92B2FD817070019443E /* SceneDelegate.swift */; };
+		301FD9302FD817070019443E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FD92C2FD817070019443E /* ViewController.swift */; };
+		301FD9312FD817070019443E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301FD9252FD817070019443E /* Assets.xcassets */; };
+		301FD9332FD817070019443E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301FD9282FD817070019443E /* LaunchScreen.storyboard */; };
+		301FD9342FD817070019443E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301FD92A2FD817070019443E /* Main.storyboard */; };
+		301FD9362FD817110019443E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FD9352FD817110019443E /* ContentView.swift */; };
+		B00100012FD817070019443E /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100022FD817070019443E /* NotificationNames.swift */; };
+		B00100032FD817070019443E /* PressureLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100042FD817070019443E /* PressureLog.swift */; };
+		B00100052FD817070019443E /* PressureRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100062FD817070019443E /* PressureRecord.swift */; };
+		B00100072FD817070019443E /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100082FD817070019443E /* Achievement.swift */; };
+		B00100092FD817070019443E /* FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001000A2FD817070019443E /* FeedbackService.swift */; };
+		B001000B2FD817070019443E /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001000C2FD817070019443E /* AppStorageManager.swift */; };
+		B001000D2FD817070019443E /* ShakeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001000E2FD817070019443E /* ShakeEffect.swift */; };
+		B001000F2FD817070019443E /* PressableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100102FD817070019443E /* PressableButtonStyle.swift */; };
+		B00100112FD817070019443E /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100122FD817070019443E /* BackgroundView.swift */; };
+		B00100132FD817070019443E /* SuccessCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100142FD817070019443E /* SuccessCheckmark.swift */; };
+		B00100152FD817070019443E /* AchievementBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100162FD817070019443E /* AchievementBannerView.swift */; };
+		B00100172FD817070019443E /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100182FD817070019443E /* CustomTabBar.swift */; };
+		B00100192FD817070019443E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001001A2FD817070019443E /* OnboardingView.swift */; };
+		B001001B2FD817070019443E /* PressureTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001001C2FD817070019443E /* PressureTrackerView.swift */; };
+		B001001D2FD817070019443E /* PressureTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001001E2FD817070019443E /* PressureTrackerViewModel.swift */; };
+		B001001F2FD817070019443E /* PressureLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100202FD817070019443E /* PressureLogView.swift */; };
+		B00100212FD817070019443E /* PressureLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100222FD817070019443E /* PressureLogViewModel.swift */; };
+		B00100232FD817070019443E /* PressureInsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100242FD817070019443E /* PressureInsightsView.swift */; };
+		B00100252FD817070019443E /* PressureInsightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100262FD817070019443E /* PressureInsightsViewModel.swift */; };
+		B00100272FD817070019443E /* LogInsightsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100282FD817070019443E /* LogInsightsContainerView.swift */; };
+		B00100292FD817070019443E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001002A2FD817070019443E /* SettingsView.swift */; };
+		B001002B2FD817070019443E /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001002C2FD817070019443E /* PrivacyPolicyView.swift */; };
+		B001002D2FD817070019443E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001002E2FD817070019443E /* MainTabView.swift */; };
+		B001002F2FD817070019443E /* privacy_policy.md in Resources */ = {isa = PBXBuildFile; fileRef = B00100302FD817070019443E /* privacy_policy.md */; };
+		B00200012FD817070019443E /* WellnessNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200022FD817070019443E /* WellnessNote.swift */; };
+		B00200032FD817070019443E /* TimeOfDayPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200042FD817070019443E /* TimeOfDayPreset.swift */; };
+		B00200052FD817070019443E /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200062FD817070019443E /* SavedLocation.swift */; };
+		B00200072FD817070019443E /* AppDataExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200082FD817070019443E /* AppDataExport.swift */; };
+		B002000B2FD817070019443E /* PressureForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002000C2FD817070019443E /* PressureForecastService.swift */; };
+		B002000D2FD817070019443E /* PeriodComparisonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002000E2FD817070019443E /* PeriodComparisonService.swift */; };
+		B002000F2FD817070019443E /* WellnessCorrelationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200102FD817070019443E /* WellnessCorrelationService.swift */; };
+		B00200112FD817070019443E /* DataExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200122FD817070019443E /* DataExportService.swift */; };
+		B00200132FD817070019443E /* ComfortZoneService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200142FD817070019443E /* ComfortZoneService.swift */; };
+		B00200152FD817070019443E /* InAppReminderBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200162FD817070019443E /* InAppReminderBanner.swift */; };
+		B00200172FD817070019443E /* ForecastCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200182FD817070019443E /* ForecastCard.swift */; };
+		B00200192FD817070019443E /* LocationPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002001A2FD817070019443E /* LocationPickerRow.swift */; };
+		B002001B2FD817070019443E /* WellnessPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002001C2FD817070019443E /* WellnessPickerRow.swift */; };
+		B002001D2FD817070019443E /* QuickPresetButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002001E2FD817070019443E /* QuickPresetButtons.swift */; };
+		B002001F2FD817070019443E /* LocationsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200202FD817070019443E /* LocationsSettingsView.swift */; };
+		B00200212FD817070019443E /* ComfortZoneSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200222FD817070019443E /* ComfortZoneSettingsView.swift */; };
+		B00200232FD817070019443E /* DataTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200242FD817070019443E /* DataTransferView.swift */; };
+		B00200252FD817070019443E /* PeriodComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200262FD817070019443E /* PeriodComparisonView.swift */; };
+		B00200272FD817070019443E /* WellnessCorrelationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00200282FD817070019443E /* WellnessCorrelationView.swift */; };
+		B00300012FD817070019443E /* AppCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00300022FD817070019443E /* AppCard.swift */; };
+		B00300032FD817070019443E /* AppSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00300042FD817070019443E /* AppSettingsCell.swift */; };
+		B00300052FD817070019443E /* AppStatTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00300062FD817070019443E /* AppStatTile.swift */; };
+		B00300072FD817070019443E /* AppEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00300082FD817070019443E /* AppEmptyState.swift */; };
+		B00300092FD817070019443E /* PressureLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003000A2FD817070019443E /* PressureLogCell.swift */; };
+		B003000B2FD817070019443E /* PressureRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003000C2FD817070019443E /* PressureRecordCell.swift */; };
+		B003000D2FD817070019443E /* AppDetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003000E2FD817070019443E /* AppDetailHeader.swift */; };
+		B00400012FD817070019443E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00400022FD817070019443E /* HomeView.swift */; };
+		B00400032FD817070019443E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00400042FD817070019443E /* HomeViewModel.swift */; };
+		B00400052FD817070019443E /* HomeDashboardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00400062FD817070019443E /* HomeDashboardWidget.swift */; };
+		B00500012FD817070019443E /* AppVisualStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00500022FD817070019443E /* AppVisualStyle.swift */; };
+		B00600012FD817070019443E /* AppExternalLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00600022FD817070019443E /* AppExternalLink.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		301FD90C2FD816F80019443E /* 213MerrowLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 213MerrowLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		301FD9242FD817070019443E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		301FD9252FD817070019443E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		301FD9262FD817070019443E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301FD9272FD817070019443E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		301FD9292FD817070019443E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		301FD92B2FD817070019443E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		301FD92C2FD817070019443E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		301FD9352FD817110019443E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		433E77201D1C723929FBDD4C /* Pods-213MerrowLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-213MerrowLabs.debug.xcconfig"; path = "Target Support Files/Pods-213MerrowLabs/Pods-213MerrowLabs.debug.xcconfig"; sourceTree = "<group>"; };
+		9C16D3BF5DBF8E6BFA967A2B /* Pods_213MerrowLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_213MerrowLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00100022FD817070019443E /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		B00100042FD817070019443E /* PressureLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureLog.swift; sourceTree = "<group>"; };
+		B00100062FD817070019443E /* PressureRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureRecord.swift; sourceTree = "<group>"; };
+		B00100082FD817070019443E /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		B001000A2FD817070019443E /* FeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackService.swift; sourceTree = "<group>"; };
+		B001000C2FD817070019443E /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
+		B001000E2FD817070019443E /* ShakeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeEffect.swift; sourceTree = "<group>"; };
+		B00100102FD817070019443E /* PressableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableButtonStyle.swift; sourceTree = "<group>"; };
+		B00100122FD817070019443E /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		B00100142FD817070019443E /* SuccessCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessCheckmark.swift; sourceTree = "<group>"; };
+		B00100162FD817070019443E /* AchievementBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementBannerView.swift; sourceTree = "<group>"; };
+		B00100182FD817070019443E /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		B001001A2FD817070019443E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B001001C2FD817070019443E /* PressureTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureTrackerView.swift; sourceTree = "<group>"; };
+		B001001E2FD817070019443E /* PressureTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureTrackerViewModel.swift; sourceTree = "<group>"; };
+		B00100202FD817070019443E /* PressureLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureLogView.swift; sourceTree = "<group>"; };
+		B00100222FD817070019443E /* PressureLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureLogViewModel.swift; sourceTree = "<group>"; };
+		B00100242FD817070019443E /* PressureInsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureInsightsView.swift; sourceTree = "<group>"; };
+		B00100262FD817070019443E /* PressureInsightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureInsightsViewModel.swift; sourceTree = "<group>"; };
+		B00100282FD817070019443E /* LogInsightsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInsightsContainerView.swift; sourceTree = "<group>"; };
+		B001002A2FD817070019443E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B001002C2FD817070019443E /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		B001002E2FD817070019443E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B00100302FD817070019443E /* privacy_policy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = privacy_policy.md; sourceTree = "<group>"; };
+		B00200022FD817070019443E /* WellnessNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessNote.swift; sourceTree = "<group>"; };
+		B00200042FD817070019443E /* TimeOfDayPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOfDayPreset.swift; sourceTree = "<group>"; };
+		B00200062FD817070019443E /* SavedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
+		B00200082FD817070019443E /* AppDataExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataExport.swift; sourceTree = "<group>"; };
+		B002000C2FD817070019443E /* PressureForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureForecastService.swift; sourceTree = "<group>"; };
+		B002000E2FD817070019443E /* PeriodComparisonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodComparisonService.swift; sourceTree = "<group>"; };
+		B00200102FD817070019443E /* WellnessCorrelationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessCorrelationService.swift; sourceTree = "<group>"; };
+		B00200122FD817070019443E /* DataExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExportService.swift; sourceTree = "<group>"; };
+		B00200142FD817070019443E /* ComfortZoneService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfortZoneService.swift; sourceTree = "<group>"; };
+		B00200162FD817070019443E /* InAppReminderBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppReminderBanner.swift; sourceTree = "<group>"; };
+		B00200182FD817070019443E /* ForecastCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCard.swift; sourceTree = "<group>"; };
+		B002001A2FD817070019443E /* LocationPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerRow.swift; sourceTree = "<group>"; };
+		B002001C2FD817070019443E /* WellnessPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessPickerRow.swift; sourceTree = "<group>"; };
+		B002001E2FD817070019443E /* QuickPresetButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPresetButtons.swift; sourceTree = "<group>"; };
+		B00200202FD817070019443E /* LocationsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsSettingsView.swift; sourceTree = "<group>"; };
+		B00200222FD817070019443E /* ComfortZoneSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfortZoneSettingsView.swift; sourceTree = "<group>"; };
+		B00200242FD817070019443E /* DataTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferView.swift; sourceTree = "<group>"; };
+		B00200262FD817070019443E /* PeriodComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodComparisonView.swift; sourceTree = "<group>"; };
+		B00200282FD817070019443E /* WellnessCorrelationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessCorrelationView.swift; sourceTree = "<group>"; };
+		B00200292FD817070019443E /* 213MerrowLabs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 213MerrowLabs.entitlements; sourceTree = "<group>"; };
+		B00300022FD817070019443E /* AppCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCard.swift; sourceTree = "<group>"; };
+		B00300042FD817070019443E /* AppSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsCell.swift; sourceTree = "<group>"; };
+		B00300062FD817070019443E /* AppStatTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStatTile.swift; sourceTree = "<group>"; };
+		B00300082FD817070019443E /* AppEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEmptyState.swift; sourceTree = "<group>"; };
+		B003000A2FD817070019443E /* PressureLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureLogCell.swift; sourceTree = "<group>"; };
+		B003000C2FD817070019443E /* PressureRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureRecordCell.swift; sourceTree = "<group>"; };
+		B003000E2FD817070019443E /* AppDetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailHeader.swift; sourceTree = "<group>"; };
+		B00400022FD817070019443E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B00400042FD817070019443E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B00400062FD817070019443E /* HomeDashboardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDashboardWidget.swift; sourceTree = "<group>"; };
+		B00500022FD817070019443E /* AppVisualStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVisualStyle.swift; sourceTree = "<group>"; };
+		B00600022FD817070019443E /* AppExternalLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExternalLink.swift; sourceTree = "<group>"; };
+		C73AC864955EE097DFD2AADA /* Pods-213MerrowLabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-213MerrowLabs.release.xcconfig"; path = "Target Support Files/Pods-213MerrowLabs/Pods-213MerrowLabs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		301FD91E2FD816F80019443E /* Exceptions for "213MerrowLabs" folder in "213MerrowLabs" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 301FD90B2FD816F80019443E /* 213MerrowLabs */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		301FD90E2FD816F80019443E /* 213MerrowLabs */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				301FD91E2FD816F80019443E /* Exceptions for "213MerrowLabs" folder in "213MerrowLabs" target */,
-			);
-			path = 213MerrowLabs;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		301FD9092FD816F80019443E /* Frameworks */ = {
@@ -42,11 +153,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280A710A74177307FF465FF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C16D3BF5DBF8E6BFA967A2B /* Pods_213MerrowLabs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		301FD9032FD816F80019443E = {
 			isa = PBXGroup;
 			children = (
-				301FD90E2FD816F80019443E /* 213MerrowLabs */,
+				301FD92D2FD817070019443E /* 213MerrowLabs */,
 				301FD90D2FD816F80019443E /* Products */,
+				4F8916A9EA9C7C76C2D7E641 /* Pods */,
+				280A710A74177307FF465FF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +179,254 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		301FD92D2FD817070019443E /* 213MerrowLabs */ = {
+			isa = PBXGroup;
+			children = (
+				301FD9242FD817070019443E /* AppDelegate.swift */,
+				301FD9352FD817110019443E /* ContentView.swift */,
+				B00100312FD817070019443E /* Core */,
+				B00100322FD817070019443E /* Components */,
+				B00100332FD817070019443E /* Features */,
+				301FD9252FD817070019443E /* Assets.xcassets */,
+				B00200292FD817070019443E /* 213MerrowLabs.entitlements */,
+				301FD9262FD817070019443E /* Info.plist */,
+				B00100302FD817070019443E /* privacy_policy.md */,
+				301FD9282FD817070019443E /* LaunchScreen.storyboard */,
+				301FD92A2FD817070019443E /* Main.storyboard */,
+				301FD92B2FD817070019443E /* SceneDelegate.swift */,
+				301FD92C2FD817070019443E /* ViewController.swift */,
+			);
+			path = 213MerrowLabs;
+			sourceTree = "<group>";
+		};
+		4F8916A9EA9C7C76C2D7E641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				433E77201D1C723929FBDD4C /* Pods-213MerrowLabs.debug.xcconfig */,
+				C73AC864955EE097DFD2AADA /* Pods-213MerrowLabs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B00100312FD817070019443E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B00600022FD817070019443E /* AppExternalLink.swift */,
+				B00100342FD817070019443E /* Extensions */,
+				B00100352FD817070019443E /* Models */,
+				B00100362FD817070019443E /* Services */,
+				B00100372FD817070019443E /* Storage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B00100322FD817070019443E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B003000F2FD817070019443E /* UI */,
+				B00100162FD817070019443E /* AchievementBannerView.swift */,
+				B00100122FD817070019443E /* BackgroundView.swift */,
+				B00100182FD817070019443E /* CustomTabBar.swift */,
+				B00200182FD817070019443E /* ForecastCard.swift */,
+				B00200162FD817070019443E /* InAppReminderBanner.swift */,
+				B002001A2FD817070019443E /* LocationPickerRow.swift */,
+				B00100102FD817070019443E /* PressableButtonStyle.swift */,
+				B002001E2FD817070019443E /* QuickPresetButtons.swift */,
+				B001000E2FD817070019443E /* ShakeEffect.swift */,
+				B00100142FD817070019443E /* SuccessCheckmark.swift */,
+				B002001C2FD817070019443E /* WellnessPickerRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B00100332FD817070019443E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B002002A2FD817070019443E /* ComfortZone */,
+				B002002B2FD817070019443E /* DataTransfer */,
+				B00400072FD817070019443E /* Home */,
+				B00100382FD817070019443E /* LogInsights */,
+				B002002C2FD817070019443E /* Locations */,
+				B00100392FD817070019443E /* Main */,
+				B001003A2FD817070019443E /* Onboarding */,
+				B002002D2FD817070019443E /* PeriodComparison */,
+				B001003B2FD817070019443E /* PressureInsights */,
+				B001003C2FD817070019443E /* PressureLog */,
+				B001003D2FD817070019443E /* PressureTracker */,
+				B001003E2FD817070019443E /* Settings */,
+				B002002E2FD817070019443E /* Wellness */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B00100342FD817070019443E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B00100022FD817070019443E /* NotificationNames.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B00100352FD817070019443E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B00100082FD817070019443E /* Achievement.swift */,
+				B00200082FD817070019443E /* AppDataExport.swift */,
+				B00100042FD817070019443E /* PressureLog.swift */,
+				B00100062FD817070019443E /* PressureRecord.swift */,
+				B00200062FD817070019443E /* SavedLocation.swift */,
+				B00200042FD817070019443E /* TimeOfDayPreset.swift */,
+				B00200022FD817070019443E /* WellnessNote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B00100362FD817070019443E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B00200142FD817070019443E /* ComfortZoneService.swift */,
+				B00200122FD817070019443E /* DataExportService.swift */,
+				B001000A2FD817070019443E /* FeedbackService.swift */,
+				B002000E2FD817070019443E /* PeriodComparisonService.swift */,
+				B002000C2FD817070019443E /* PressureForecastService.swift */,
+				B00200102FD817070019443E /* WellnessCorrelationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B00100372FD817070019443E /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B001000C2FD817070019443E /* AppStorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		B00100382FD817070019443E /* LogInsights */ = {
+			isa = PBXGroup;
+			children = (
+				B00100282FD817070019443E /* LogInsightsContainerView.swift */,
+			);
+			path = LogInsights;
+			sourceTree = "<group>";
+		};
+		B00100392FD817070019443E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B001002E2FD817070019443E /* MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B001003A2FD817070019443E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B001001A2FD817070019443E /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B001003B2FD817070019443E /* PressureInsights */ = {
+			isa = PBXGroup;
+			children = (
+				B00100242FD817070019443E /* PressureInsightsView.swift */,
+				B00100262FD817070019443E /* PressureInsightsViewModel.swift */,
+			);
+			path = PressureInsights;
+			sourceTree = "<group>";
+		};
+		B001003C2FD817070019443E /* PressureLog */ = {
+			isa = PBXGroup;
+			children = (
+				B00100202FD817070019443E /* PressureLogView.swift */,
+				B00100222FD817070019443E /* PressureLogViewModel.swift */,
+			);
+			path = PressureLog;
+			sourceTree = "<group>";
+		};
+		B001003D2FD817070019443E /* PressureTracker */ = {
+			isa = PBXGroup;
+			children = (
+				B001001C2FD817070019443E /* PressureTrackerView.swift */,
+				B001001E2FD817070019443E /* PressureTrackerViewModel.swift */,
+			);
+			path = PressureTracker;
+			sourceTree = "<group>";
+		};
+		B001003E2FD817070019443E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B001002C2FD817070019443E /* PrivacyPolicyView.swift */,
+				B001002A2FD817070019443E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B002002A2FD817070019443E /* ComfortZone */ = {
+			isa = PBXGroup;
+			children = (
+				B00200222FD817070019443E /* ComfortZoneSettingsView.swift */,
+			);
+			path = ComfortZone;
+			sourceTree = "<group>";
+		};
+		B002002B2FD817070019443E /* DataTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				B00200242FD817070019443E /* DataTransferView.swift */,
+			);
+			path = DataTransfer;
+			sourceTree = "<group>";
+		};
+		B002002C2FD817070019443E /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				B00200202FD817070019443E /* LocationsSettingsView.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		B002002D2FD817070019443E /* PeriodComparison */ = {
+			isa = PBXGroup;
+			children = (
+				B00200262FD817070019443E /* PeriodComparisonView.swift */,
+			);
+			path = PeriodComparison;
+			sourceTree = "<group>";
+		};
+		B002002E2FD817070019443E /* Wellness */ = {
+			isa = PBXGroup;
+			children = (
+				B00200282FD817070019443E /* WellnessCorrelationView.swift */,
+			);
+			path = Wellness;
+			sourceTree = "<group>";
+		};
+		B003000F2FD817070019443E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B00500022FD817070019443E /* AppVisualStyle.swift */,
+				B00300022FD817070019443E /* AppCard.swift */,
+				B003000E2FD817070019443E /* AppDetailHeader.swift */,
+				B00300082FD817070019443E /* AppEmptyState.swift */,
+				B00300042FD817070019443E /* AppSettingsCell.swift */,
+				B00300062FD817070019443E /* AppStatTile.swift */,
+				B003000A2FD817070019443E /* PressureLogCell.swift */,
+				B003000C2FD817070019443E /* PressureRecordCell.swift */,
+				B00400062FD817070019443E /* HomeDashboardWidget.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B00400072FD817070019443E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B00400022FD817070019443E /* HomeView.swift */,
+				B00400042FD817070019443E /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +434,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 301FD91F2FD816F80019443E /* Build configuration list for PBXNativeTarget "213MerrowLabs" */;
 			buildPhases = (
+				FC837D3E608663F6AF773506 /* [CP] Check Pods Manifest.lock */,
 				301FD9082FD816F80019443E /* Sources */,
 				301FD9092FD816F80019443E /* Frameworks */,
 				301FD90A2FD816F80019443E /* Resources */,
@@ -73,12 +443,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				301FD90E2FD816F80019443E /* 213MerrowLabs */,
-			);
 			name = 213MerrowLabs;
-			packageProductDependencies = (
-			);
 			productName = 213MerrowLabs;
 			productReference = 301FD90C2FD816F80019443E /* 213MerrowLabs.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +464,7 @@
 				};
 			};
 			buildConfigurationList = 301FD9072FD816F80019443E /* Build configuration list for PBXProject "213MerrowLabs" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +472,6 @@
 				Base,
 			);
 			mainGroup = 301FD9032FD816F80019443E;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 301FD90D2FD816F80019443E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,81 +486,209 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301FD9312FD817070019443E /* Assets.xcassets in Resources */,
+				301FD9332FD817070019443E /* LaunchScreen.storyboard in Resources */,
+				301FD9342FD817070019443E /* Main.storyboard in Resources */,
+				B001002F2FD817070019443E /* privacy_policy.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FC837D3E608663F6AF773506 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-213MerrowLabs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		301FD9082FD816F80019443E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301FD92E2FD817070019443E /* AppDelegate.swift in Sources */,
+				B00600012FD817070019443E /* AppExternalLink.swift in Sources */,
+				B001000B2FD817070019443E /* AppStorageManager.swift in Sources */,
+				B00100152FD817070019443E /* AchievementBannerView.swift in Sources */,
+				B00100072FD817070019443E /* Achievement.swift in Sources */,
+				B00100112FD817070019443E /* BackgroundView.swift in Sources */,
+				301FD9362FD817110019443E /* ContentView.swift in Sources */,
+				B00100172FD817070019443E /* CustomTabBar.swift in Sources */,
+				B00100092FD817070019443E /* FeedbackService.swift in Sources */,
+				B00100272FD817070019443E /* LogInsightsContainerView.swift in Sources */,
+				B001002D2FD817070019443E /* MainTabView.swift in Sources */,
+				B00100012FD817070019443E /* NotificationNames.swift in Sources */,
+				B00100192FD817070019443E /* OnboardingView.swift in Sources */,
+				B001001F2FD817070019443E /* PressureLogView.swift in Sources */,
+				B00100212FD817070019443E /* PressureLogViewModel.swift in Sources */,
+				B00100032FD817070019443E /* PressureLog.swift in Sources */,
+				B00100232FD817070019443E /* PressureInsightsView.swift in Sources */,
+				B00100252FD817070019443E /* PressureInsightsViewModel.swift in Sources */,
+				B00100052FD817070019443E /* PressureRecord.swift in Sources */,
+				B001001B2FD817070019443E /* PressureTrackerView.swift in Sources */,
+				B001001D2FD817070019443E /* PressureTrackerViewModel.swift in Sources */,
+				B001000F2FD817070019443E /* PressableButtonStyle.swift in Sources */,
+				B001002B2FD817070019443E /* PrivacyPolicyView.swift in Sources */,
+				301FD92F2FD817070019443E /* SceneDelegate.swift in Sources */,
+				B001000D2FD817070019443E /* ShakeEffect.swift in Sources */,
+				B00100292FD817070019443E /* SettingsView.swift in Sources */,
+				B00100132FD817070019443E /* SuccessCheckmark.swift in Sources */,
+				301FD9302FD817070019443E /* ViewController.swift in Sources */,
+				B00200012FD817070019443E /* WellnessNote.swift in Sources */,
+				B00200032FD817070019443E /* TimeOfDayPreset.swift in Sources */,
+				B00200052FD817070019443E /* SavedLocation.swift in Sources */,
+				B00200072FD817070019443E /* AppDataExport.swift in Sources */,
+				B002000B2FD817070019443E /* PressureForecastService.swift in Sources */,
+				B002000D2FD817070019443E /* PeriodComparisonService.swift in Sources */,
+				B002000F2FD817070019443E /* WellnessCorrelationService.swift in Sources */,
+				B00200112FD817070019443E /* DataExportService.swift in Sources */,
+				B00200132FD817070019443E /* ComfortZoneService.swift in Sources */,
+				B00200152FD817070019443E /* InAppReminderBanner.swift in Sources */,
+				B00200172FD817070019443E /* ForecastCard.swift in Sources */,
+				B00200192FD817070019443E /* LocationPickerRow.swift in Sources */,
+				B002001B2FD817070019443E /* WellnessPickerRow.swift in Sources */,
+				B002001D2FD817070019443E /* QuickPresetButtons.swift in Sources */,
+				B002001F2FD817070019443E /* LocationsSettingsView.swift in Sources */,
+				B00200212FD817070019443E /* ComfortZoneSettingsView.swift in Sources */,
+				B00200232FD817070019443E /* DataTransferView.swift in Sources */,
+				B00200252FD817070019443E /* PeriodComparisonView.swift in Sources */,
+				B00200272FD817070019443E /* WellnessCorrelationView.swift in Sources */,
+				B00500012FD817070019443E /* AppVisualStyle.swift in Sources */,
+				B00300012FD817070019443E /* AppCard.swift in Sources */,
+				B00300032FD817070019443E /* AppSettingsCell.swift in Sources */,
+				B00300052FD817070019443E /* AppStatTile.swift in Sources */,
+				B00300072FD817070019443E /* AppEmptyState.swift in Sources */,
+				B00300092FD817070019443E /* PressureLogCell.swift in Sources */,
+				B003000B2FD817070019443E /* PressureRecordCell.swift in Sources */,
+				B003000D2FD817070019443E /* AppDetailHeader.swift in Sources */,
+				B00400012FD817070019443E /* HomeView.swift in Sources */,
+				B00400032FD817070019443E /* HomeViewModel.swift in Sources */,
+				B00400052FD817070019443E /* HomeDashboardWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		301FD9282FD817070019443E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301FD9272FD817070019443E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		301FD92A2FD817070019443E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301FD9292FD817070019443E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		301FD9202FD816F80019443E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433E77201D1C723929FBDD4C /* Pods-213MerrowLabs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 213MerrowLabs/213MerrowLabs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 213MerrowLabs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Merrow Labs";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-13MerrowLabs";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rol.m3rr0wl6bs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		301FD9212FD816F80019443E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C73AC864955EE097DFD2AADA /* Pods-213MerrowLabs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 213MerrowLabs/213MerrowLabs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 213MerrowLabs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Merrow Labs";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-13MerrowLabs";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rol.m3rr0wl6bs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
