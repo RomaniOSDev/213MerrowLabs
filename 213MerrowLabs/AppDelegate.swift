@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
     private func configureAppsFlyer() {
         //AppsFlyer
         AppsFlyerLib.shared().appsFlyerDevKey = "cqTiFvvyhL5a2SNAqqAna3"
-        AppsFlyerLib.shared().appleAppID = "6759949645"
+        AppsFlyerLib.shared().appleAppID = "6776459609"
         AppsFlyerLib.shared().delegate = self
         AppsFlyerLib.shared().deepLinkDelegate = self
         AppsFlyerLib.shared().start()
